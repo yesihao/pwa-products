@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin:auto;
+}
+
+.sign {
+  width: 100%;
+  height: 100%;
+  background-color: SpringGreen;
+}
+
+.name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  white-space:nowrap;
+}
+
+.scaler {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}

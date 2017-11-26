@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_200</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="logo_200" stroke="#FF6666" stroke-width="10">
+            <path d="M141,5 L171.00034,5 C184.254986,5 195,15.7332255 195,28.9996598 L195,59 M195,141 L195,171.00034 C195,184.254986 184.266774,195 171.00034,195 L141,195 M59,195 L28.9996598,195 C15.7450137,195 5,184.266774 5,171.00034 L5,141 M5,59 L5,28.9996598 L5,28.9996598 C5,15.7450137 15.7332255,5 28.9996598,5 L59,5" id="Rectangle-3"></path>
+        </g>
+    </g>
+</svg>

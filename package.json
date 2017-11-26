@@ -1,0 +1,67 @@
+{
+  "name": "pwa-products",
+  "version": "0.0.1",
+  "description": "a content pwa",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "rimraf dist && webpack --config webpack.prod.config.js",
+    "dep:prod": "npm run build && ssh deg rm -rf /home/lutz/creator-web && scp -r dist deg:creator-web"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomorning/xbq-saas-web.git"
+  },
+  "author": "yesihao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tomorning/xbq-saas-web/issues"
+  },
+  "homepage": "https://github.com/Tomorning/xbq-saas-web#readme",
+  "dependencies": {
+    "bulma": "^0.6.1",
+    "classnames": "^2.2.5",
+    "core-js": "^2.5.0",
+    "history": "^4.6.3",
+    "immutable": "^3.8.1",
+    "lodash-es": "^4.17.4",
+    "normalize.css": "^7.0.0",
+    "omit": "^1.0.1",
+    "prop-types": "^15.5.10",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-loadable": "^4.0.5",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-immutablejs": "^0.0.8",
+    "redux-thunk": "^2.2.0",
+    "regenerator-runtime": "^0.11.0",
+    "reselect": "^3.0.1",
+    "tjs": "https://github.com/Tomorning/creator-web#beb318e"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.2",
+    "webpack-merge": "^4.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}

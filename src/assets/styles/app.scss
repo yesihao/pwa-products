@@ -1,0 +1,16 @@
+@import "./bulma-vars.scss";
+
+:global {
+	html, body {
+		height: 100%;
+		background-color: #e1e1e1;
+	}
+  .is-middle {
+    vertical-align: middle !important;
+  }
+
+  .is-none {
+    display: none !important;
+  }
+}
+
