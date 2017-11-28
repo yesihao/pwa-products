@@ -4,7 +4,7 @@
   "description": "pwa-products",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --hot",
     "build": "rimraf dist && webpack --config webpack.prod.config.js",
     "dep:prod": "npm run build && ssh deg rm -rf /home/lutz/creator-web && scp -r dist deg:creator-web"
   },

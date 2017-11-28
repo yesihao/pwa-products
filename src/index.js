@@ -15,3 +15,8 @@ render(
   <App store={store} history={history} />,
   document.getElementById('root')
 )
+
+module.hot.accept('./App', () => {
+  const NextRootContainer = require('./App.js').default
+  render(<NextRootContainer store={store} history={history} />, document.getElementById('root'))
+})
