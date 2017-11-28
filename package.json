@@ -1,7 +1,7 @@
 {
   "name": "pwa-products",
   "version": "0.0.1",
-  "description": "a content pwa",
+  "description": "pwa-products",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -10,35 +10,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tomorning/xbq-saas-web.git"
+    "url": "git+https://github.com/yesihao/pwa-products.git"
   },
   "author": "yesihao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Tomorning/xbq-saas-web/issues"
+    "url": "https://github.com/yesihao/pwa-products/issues"
   },
-  "homepage": "https://github.com/Tomorning/xbq-saas-web#readme",
+  "homepage": "https://github.com/yesihao/pwa-products#readme",
   "dependencies": {
     "bulma": "^0.6.1",
     "classnames": "^2.2.5",
     "core-js": "^2.5.0",
     "history": "^4.6.3",
     "immutable": "^3.8.1",
-    "lodash-es": "^4.17.4",
     "normalize.css": "^7.0.0",
-    "omit": "^1.0.1",
     "prop-types": "^15.5.10",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-loadable": "^4.0.5",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "reax": "https://github.com/BurningLutz/reax#0.1.2",
     "redux": "^3.7.2",
     "redux-immutablejs": "^0.0.8",
     "redux-thunk": "^2.2.0",
     "regenerator-runtime": "^0.11.0",
     "reselect": "^3.0.1",
-    "tjs": "https://github.com/Tomorning/creator-web#beb318e"
+    "tjs": "https://github.com/Tomorning/creator-web#beb318e",
+    "woocommerce-api": "^1.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -162,26 +162,7 @@ const configs = {
         'process.env.ORIGIN': JSON.stringify(ORIGIN)
       }),
     ],
-  },
-  dev: {
-    devtool: 'cheap-module-eval-source-map',
-    devServer: {
-      compress: true,
-      historyApiFallback: true,
-      host: '0.0.0.0',
-      overlay: true,
-      port: 8080,
-      // proxying requrests to work-around CORS issues
-      // proxy: {
-      //   '/api': {
-      //     target: ORIGIN,
-      //     pathRewrite: {'^/api' : ''}
-      //   }
-      // },
-      stats: statsConfig,
-      disableHostCheck: true,
-    }
-  },
+  }
 }
 
 if (configs[nenv]) {

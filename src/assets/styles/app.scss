@@ -1,10 +1,9 @@
-@import "./bulma-vars.scss";
-
 :global {
-	html, body {
-		height: 100%;
-		background-color: #e1e1e1;
+	body {
+    font-size: 0.75rem;
+		// background-color: #e1e1e1;
 	}
+
   .is-middle {
     vertical-align: middle !important;
   }
@@ -12,5 +11,30 @@
   .is-none {
     display: none !important;
   }
-}
 
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inline-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+  @mixin flex-centered-row {
+    display: flex;
+    align-items: center;
+  }
+  .flex-centered {
+    @include flex-centered-row;
+    justify-content: center;
+  }
+  .flex-centered-row {
+    @include flex-centered-row;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

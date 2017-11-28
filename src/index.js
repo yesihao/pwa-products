@@ -5,8 +5,8 @@ import './polyfill'
 import App from './App'
 
 import 'normalize.css'
-import './assets/styles/app.scss'
 import './assets/styles/bulma.scss'
+import './assets/styles/app.scss'
 
 import store from './store'
 import history from './history'

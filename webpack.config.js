@@ -3,7 +3,6 @@
 const ORIGIN = 'http://www.yesihao.tk/'
 const path = require('path')
 
-const webpack = require('webpack')
 const merge = require('webpack-merge')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -137,31 +136,12 @@ const configs = {
       extractOther,
       extractMain,
     ],
-    stats: statsConfig
-  },
-  build: {
-    plugins: [
-      new webpack.HashedModuleIdsPlugin(),
-      new webpack.NamedChunksPlugin(),
-      new webpack.optimize.UglifyJsPlugin({
-        comments: false
-      }),
-      // seperate vendor, polyfill, and webpack runtime from app code for long-term caching
-      new webpack.optimize.CommonsChunkPlugin({
-        names: ['polyfill', 'vendor', 'runtime'],
-        minChunks: Infinity
-      }),
-      new webpack.optimize.CommonsChunkPlugin({
-        name: 'main',
-        minChunks: 2,
-        children: true,
-        deepChildren: true,
-      }),
-      new webpack.DefinePlugin({
-        'process.env.NODE_ENV': JSON.stringify('production'),
-        'process.env.ORIGIN': JSON.stringify(ORIGIN)
-      }),
-    ],
+    stats: statsConfig,
+    node: {
+      fs: 'empty',
+      tls: 'empty',
+      net: 'empty',
+    }
   },
   dev: {
     devtool: 'cheap-module-eval-source-map',
@@ -172,12 +152,12 @@ const configs = {
       overlay: true,
       port: 9000,
       // proxying requrests to work-around CORS issues
-      // proxy: {
-      //   '/api': {
-      //     target: ORIGIN,
-      //     pathRewrite: {'^/api' : ''}
-      //   }
-      // },
+      proxy: {
+        '/api': {
+          target: ORIGIN,
+          pathRewrite: {'^/api' : ''}
+        }
+      },
       disableHostCheck: true,
     }
   },

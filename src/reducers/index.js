@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux-immutablejs'
 
-import login from './login.js'
+import products from './products'
 
 export default combineReducers({
-  login,
+  products,
 })

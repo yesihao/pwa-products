@@ -1,12 +1,4 @@
 @import "~bulma/sass/utilities/initial-variables.sass";
-
-$tablet: 0;
-$desktop: 0;
-$widescreen: 0;
-
-$family-sans-serif: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-
-@import "~bulma/sass/utilities/functions.sass";
-@import "~bulma/sass/utilities/derived-variables.sass";
-
-$body-size: 12px;
+//
+$navbar-background-color: $grey-dark;
+$navbar-item-color: $white;

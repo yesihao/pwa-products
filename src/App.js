@@ -8,9 +8,9 @@ const MLayout = loadable(() => import(
   /* webpackChunkName: "MLayout" */
   './components/MLayout.js'
 ))
-const Login = loadable(() => import(
-  /* webpackChunkName: "Login" */
-  './containers/Login.js'
+const Products = loadable(() => import(
+  /* webpackChunkName: "Products" */
+  './containers/Products.js'
 ))
 
 export default class App extends PureComponent {
@@ -21,8 +21,8 @@ export default class App extends PureComponent {
         <Router history={history}>
           <MLayout>
             <Switch>
-              <Route exact path="/login" component={Login} />
-              <Redirect to="/login" />
+              <Route exact path="/" component={Products} />
+              <Redirect to="/" />
             </Switch>
           </MLayout>
         </Router>

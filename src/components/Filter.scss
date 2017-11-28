@@ -1,0 +1,22 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+.navbar {
+  height: 3rem;
+  justify-content: space-between;
+
+  background-color: $grey-dark;
+  color: $white;
+}
+
+.navbar-item {
+  flex: 0 0 35%
+}
+
+.label {
+  width: 1.8rem;
+  margin: 0 0.6rem;
+}
+
+.button {
+  margin: 0 0.6rem;
+}
