@@ -12,6 +12,10 @@ const Products = loadable(() => import(
   /* webpackChunkName: "Products" */
   './containers/Products.js'
 ))
+const Product = loadable(() => import(
+  /* webpackChunkName: "Product" */
+  './containers/Product.js'
+))
 
 export default class App extends PureComponent {
   render() {
@@ -21,8 +25,9 @@ export default class App extends PureComponent {
         <Router history={history}>
           <MLayout>
             <Switch>
-              <Route exact path="/" component={Products} />
-              <Redirect to="/" />
+              <Route exact path="/products" component={Products} />
+              <Route exact path="/products/:id" component={Product} />
+              <Redirect to="/products" />
             </Switch>
           </MLayout>
         </Router>

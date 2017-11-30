@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import urls from '../urls'
 
 import Filter from '../containers/Filter.js'
 import Pagination from '../components/Pagination.js'
@@ -13,7 +15,7 @@ export default class Products extends PureComponent {
         <Filter />
         <div className="flex">
           { products.map(product =>
-            <div key={product.id} className={styles.product}>
+            <Link to={urls.product(product.id)} key={product.id} className={styles.product}>
               <div className="card">
                 <div className="card-image">
                   <figure className="image is-4by3">
@@ -26,7 +28,7 @@ export default class Products extends PureComponent {
                   </span>
                 </p>
               </div>
-            </div>
+            </Link>
           )}
         </div>
         <Pagination totalPages={Math.ceil(total / pageSize)} currentAt={page} onPage={pageToAndReload} />
