@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot",
     "build": "rimraf dist && webpack --config webpack.prod.config.js",
-    "dep": "npm run build && ssh root@104.238.149.173 rm * -rf /home/wwwroot/pd.yesihao.tk && scp -r dist root@104.238.149.173:/home/wwwroot/pd.yesihao.tk"
+    "dep": "npm run build && ssh root@pd.yesihao.tk rm * -rf /home/wwwroot/pd.yesihao.tk && scp -r dist root@pd.yesihao.tk:/home/wwwroot/pd.yesihao.tk"
   },
   "repository": {
     "type": "git",

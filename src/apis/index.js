@@ -2,7 +2,7 @@ import WooCommerceAPI from 'woocommerce-api'
 import { setCookie, getCookie } from 'tjs'
 
 export const wc = new WooCommerceAPI({
-  url: 'http://www.yesihao.tk/',
+  url: 'http://api.yesihao.tk/',
   consumerKey: 'ck_7946e9600033cc47388056d899084b09b88bcf0d',
   consumerSecret: 'cs_b6c9d84cc8b4021bbc7c2f1e89eb49eab138458d',
   wpAPI: true,
@@ -32,7 +32,7 @@ export const getWcApi = (_endpoint, params) => {
 }
 
 export const wp = new WooCommerceAPI({
-  url: 'http://www.yesihao.tk/',
+  url: 'http://api.yesihao.tk/',
   consumerKey: 'ck_7946e9600033cc47388056d899084b09b88bcf0d',
   consumerSecret: 'cs_b6c9d84cc8b4021bbc7c2f1e89eb49eab138458d',
   wpAPI: true,
