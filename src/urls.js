@@ -7,7 +7,7 @@ function products() {
 }
 
 function product(id) {
-  return `/products/${id}`
+  return `/product/${id}`
 }
 
 export default {

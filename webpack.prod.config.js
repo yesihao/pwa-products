@@ -137,7 +137,12 @@ const configs = {
       extractOther,
       extractMain,
     ],
-    stats: statsConfig
+    stats: statsConfig,
+    node: {
+      fs: 'empty',
+      tls: 'empty',
+      net: 'empty',
+    }
   },
   build: {
     plugins: [

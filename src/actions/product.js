@@ -13,6 +13,7 @@ const {
 function load(_, props) {
   return async (dispatch) => {
     const id = props.match.params.id
+    console.log(id)
     try {
       const { body: product } = await getWcApi(`products/${id}`)
       dispatch(loaded(product))
