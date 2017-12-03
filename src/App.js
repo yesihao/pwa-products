@@ -23,13 +23,15 @@ export default class App extends PureComponent {
     return (
       <Provider store={store}>
         <Router history={history}>
-          <MLayout>
-            <Switch>
-              <Route exact path="/products" component={Products} />
-              <Route exact path="/products/:id" component={Product} />
-              <Redirect to="/products" />
-            </Switch>
-          </MLayout>
+          <Route path="/" render={props => (
+            <MLayout {...props}>
+              <Switch>
+                <Route exact path="/product/:id" component={Product} />
+                <Route exact path="/products" component={Products} />
+                <Redirect to="/products" />
+              </Switch>
+            </MLayout>
+          )} />
         </Router>
       </Provider>
     )

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot",
     "build": "rimraf dist && webpack --config webpack.prod.config.js",
-    "dep:prod": "npm run build && ssh deg rm -rf /home/lutz/creator-web && scp -r dist deg:creator-web"
+    "dep": "npm run build && ssh root@104.238.149.173 rm * -rf /home/wwwroot/pd.yesihao.tk && scp -r dist root@104.238.149.173:/home/wwwroot/pd.yesihao.tk"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "react-loadable": "^4.0.5",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "reax": "https://github.com/BurningLutz/reax#0.1.2",
+    "reax": "https://github.com/BurningLutz/reax#df61b7e",
     "redux": "^3.7.2",
     "redux-immutablejs": "^0.0.8",
     "redux-thunk": "^2.2.0",
@@ -65,3 +65,4 @@
     "last 2 versions"
   ]
 }
+

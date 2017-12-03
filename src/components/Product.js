@@ -23,11 +23,12 @@ export default class Product extends PureComponent {
                   <span key={c.id}>{c.name}</span>
                 )
               }
-              {attributes[0]}
+            </p>
+            <p className="subtitle is-6">
+              {attributes[0] && `${attributes[0].name}:${attributes[0].options[0]}` } 
             </p>
           </div>
         </div>
-
         {
           images.map(img =>
             <div key={img.id} className="card-image">
@@ -37,7 +38,6 @@ export default class Product extends PureComponent {
             </div>
           )
         }
-
       </div>
     )
   }

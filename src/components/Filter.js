@@ -41,7 +41,7 @@ export default class Filter extends PureComponent {
           </div>
         </div>
         <button className={classnames('button', 'is-small', 'is-primary', styles.button)}
-          disabled={brand < 0 && model < 0}
+          disabled={brand < 0 || model < 0}
           onClick={() => pageToAndReload(1)}
         >快速查询</button>
         {/* <a className="icon is-medium">
